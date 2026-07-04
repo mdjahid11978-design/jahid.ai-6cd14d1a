@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Jahid.AI Platform</title>
+    <link rel="stylesheet" href="/styles/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-section">
+                <div class="logo">⚡</div>
+                <h1>Jahid.AI</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#overview" class="nav-item active">📊 Overview</a>
+                <a href="#agents" class="nav-item">🤖 Agents</a>
+                <a href="#analytics" class="nav-item">📈 Analytics</a>
+                <a href="#tasks" class="nav-item">📋 Tasks</a>
+                <a href="#settings" class="nav-item">⚙️ Settings</a>
+            </nav>
+            <div class="user-section">
+                <div class="user-avatar">MJ</div>
+                <div class="user-info">
+                    <p class="user-name">Syan</p>
+                    <p class="user-email">mdjahid11978</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h2 id="page-title">Overview</h2>
+                </div>
+                <div class="header-right">
+                    <div class="time" id="current-time"></div>
+                    <button class="btn-icon">🔔</button>
+                    <button class="btn-icon">⚙️</button>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Overview Section -->
+                <section id="overview" class="page-section active">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">🤖</div>
+                            <div class="stat-content">
+                                <p class="stat-label">Active Agents</p>
+                                <p class="stat-value">17</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">✅</div>
+                            <div class="stat-content">
+                                <p class="stat-label">Completed Tasks</p>
+                                <p class="stat-value">1,247</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⏱️</div>
+                            <div class="stat-content">
+                                <p class="stat-label">Avg Response</p>
+                                <p class="stat-value">284ms</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">💰</div>
+                            <div class="stat-content">
+                                <p class="stat-label">Daily Cost</p>
+                                <p class="stat-value">$24.57</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="card">
+                            <h3>System Status</h3>
+                            <div class="status-list">
+                                <div class="status-item active">Core Services</div>
+                                <div class="status-item active">Database</div>
+                                <div class="status-item active">API Gateway</div>
+                                <div class="status-item active">Memory Tiers</div>
+                                <div class="status-item warning">Deployment</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Quick Actions</h3>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary">▶️ Start Agent</button>
+                                <button class="btn btn-secondary">📊 View Report</button>
+                                <button class="btn btn-secondary">🔄 Sync Data</button>
+                                <button class="btn btn-secondary">📝 New Task</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Agents Section -->
+                <section id="agents" class="page-section">
+                    <div class="card">
+                        <h3>Agent Swarm Status</h3>
+                        <div class="agents-list">
+                            <div class="agent-item">Orchestrator</div>
+                            <div class="agent-item">Research Agent</div>
+                            <div class="agent-item">Coding Agent</div>
+                            <div class="agent-item">Security Agent</div>
+                            <div class="agent-item">Trading Agent</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Analytics Section -->
+                <section id="analytics" class="page-section">
+                    <div class="card">
+                        <h3>Platform Analytics</h3>
+                        <p>Analytics dashboard coming soon...</p>
+                    </div>
+                </section>
+
+                <!-- Tasks Section -->
+                <section id="tasks" class="page-section">
+                    <div class="card">
+                        <h3>Task Management</h3>
+                        <p><a href="/todo" style="color: #00d4ff;">Open Todo App →</a></p>
+                    </div>
+                </section>
+
+                <!-- Settings Section -->
+                <section id="settings" class="page-section">
+                    <div class="card">
+                        <h3>Platform Settings</h3>
+                        <div class="settings-form">
+                            <div class="form-group">
+                                <label>Platform Name</label>
+                                <input type="text" value="Jahid.AI.01" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Primary Admin</label>
+                                <input type="text" value="Syan (mdjahid11978)" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Registry</label>
+                                <input type="text" value="APEX-2026-MJ-001" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>

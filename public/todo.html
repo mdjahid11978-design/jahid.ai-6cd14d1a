@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - Jahid.AI</title>
+    <link rel="stylesheet" href="/styles/todo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-wrapper">
+            <div class="header">
+                <h1>✓ My Tasks</h1>
+                <p class="subtitle">Powered by Jahid.AI</p>
+            </div>
+
+            <div class="input-section">
+                <div class="input-wrapper">
+                    <input type="text" id="todoInput" class="todo-input" placeholder="Add a new task..." autocomplete="off">
+                    <button id="addBtn" class="add-btn">Add Task</button>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Total:</span>
+                    <span class="stat-value" id="totalTasks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Completed:</span>
+                    <span class="stat-value" id="completedTasks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Remaining:</span>
+                    <span class="stat-value" id="remainingTasks">0</span>
+                </div>
+            </div>
+
+            <div class="todo-list-container">
+                <ul id="todoList" class="todo-list"></ul>
+                <div id="emptyState" class="empty-state">
+                    <div class="empty-icon">📝</div>
+                    <p>No tasks yet. Add one to get started!</p>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="clearCompleted" class="action-btn clear-btn">Clear Completed</button>
+                <button id="clearAll" class="action-btn delete-btn">Clear All</button>
+            </div>
+
+            <div class="footer">
+                <p>💾 Tasks saved locally • 🎯 Built with Jahid.AI</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/todo.js"></script>
+</body>
+</html>

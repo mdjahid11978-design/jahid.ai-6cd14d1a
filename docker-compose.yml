@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: jahid-ai-app
+    ports:
+      - "5000:5000"
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+      FRONTEND_URL: http://localhost:5000
+    volumes:
+      - ./public:/app/public:ro
+    restart: unless-stopped
+    networks:
+      - jahid-network
+
+  mongodb:
+    image: mongo:6.0
+    container_name: jahid-mongodb
+    environment:
+      MONGO_INITDB_DATABASE: jahid-ai
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+    networks:
+      - jahid-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: jahid-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - jahid-network
+
+volumes:
+  mongo-data:
+  redis-data:
+
+networks:
+  jahid-network:
+    driver: bridge
