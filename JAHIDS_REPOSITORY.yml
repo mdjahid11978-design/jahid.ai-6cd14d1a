@@ -1,0 +1,14 @@
+schema: jahids.ai/repository-standard/v1
+project: jahid.ai-6cd14d1a
+account: mdjahid11978-design
+canonical_platform: mdjahid11978-design/jahids.ai
+classification: related-jahid-ai-repository
+presentation: BUILT BY JAHID
+canonical_status: secondary-or-historical
+branding:
+  banner: https://raw.githubusercontent.com/mdjahid11978-design/jahids.ai/main/assets/jahids-ai-banner.svg
+  standard: https://github.com/mdjahid11978-design/.github
+verification:
+  production_claims_require_evidence: true
+provenance:
+  third_party_rights_preserved: true
